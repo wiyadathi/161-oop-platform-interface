@@ -1037,8 +1037,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  animator: {fileID: 0}
-  rb: {fileID: 0}
+  animator: {fileID: 655134836}
+  rb: {fileID: 655134837}
+  spawnPoint: {fileID: 1383837724}
+  bullet: {fileID: 182108, guid: a5638a192258f4059b0e074542d33fbc, type: 3}
+--- !u!95 &655134836 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9582262, guid: 6dde6029886a24408b05eced6b5964a6, type: 3}
+  m_PrefabInstance: {fileID: 1827418540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &655134837 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 5044026, guid: 6dde6029886a24408b05eced6b5964a6, type: 3}
+  m_PrefabInstance: {fileID: 1827418540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &700832717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,6 +2269,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9438be3cda5b74d7c81901b9e0d831a1, type: 3}
+--- !u!4 &1383837724 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 479974, guid: 6dde6029886a24408b05eced6b5964a6, type: 3}
+  m_PrefabInstance: {fileID: 1827418540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1388170455
 PrefabInstance:
   m_ObjectHideFlags: 0

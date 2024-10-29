@@ -27,6 +27,6 @@ public abstract class Weapon : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) //add later
     {
         OnHitWith(other.GetComponent<Character>() );
-        Destroy( this.gameObject );
+       // Destroy( this.gameObject );
     }
 }

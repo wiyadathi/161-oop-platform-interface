@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crocodile : Enemy
+public class Crocodile : Enemy, IShootable
 {
     float attackRange;
     public float AttackRange { get { return attackRange; } set { attackRange = value; } }
     public Player player;
 
-    [SerializeField] Transform spawnPoint;
-    [SerializeField] GameObject bullet;
+    [SerializeField]
+    Transform spawnPoint;
+    public Transform SpawnPoint { get { return spawnPoint; } set {  spawnPoint = value; } }
+
+    [SerializeField]
+    GameObject bullet;
+    public GameObject Bullet { get { return bullet; } set { bullet = value; } }
+
 
     public float ReloadTime { get; set; }
     public float WaitTime { get; set; }
@@ -39,7 +45,7 @@ public class Crocodile : Enemy
         }
     }
 
-    void Shoot()
+    public void Shoot()
     {
         if (WaitTime >= ReloadTime)
         {
